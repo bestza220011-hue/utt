@@ -9,6 +9,7 @@ local CodeRemote = Knit.CodeService.RF.Redeem
 -- [1] ระบบกรอก Code อัตโนมัติ
 for _, code in ipairs({
     "200kInterestedBeast!",
+    "DBSUpdPatch!",
     "UniversalInfo3.0Part2!",
     "300kInterestedBeast",
     "275kInterestedBeast!",
@@ -153,7 +154,7 @@ end
 task.wait(1)
 
 -- [6] เริ่มลูปสุ่มตู้ Universal
-for i = 1, 16 do
+for i = 1, 25 do
     BuyBannerRemote:InvokeServer("FiftySummon", "Universal")
     task.wait(0.5)
     RunSellScript()
